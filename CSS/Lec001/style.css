@@ -1,0 +1,35 @@
+h2{
+    /*background-color: aqua;*/
+}
+#mycolor{
+    color: pink;
+}
+.success{
+    color: green;
+}
+
+
+/*Background*/
+
+.box{
+
+    /*height: 500px;*/
+    /*background-color: #70b4c9;*/
+    /*background-image: url("1logo.jpg");*/
+    /*background-repeat: repeat-x;*/
+    /*background-repeat: repeat-y;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: top right;*/
+    /*background-position: bottom right;*/
+    /*background-position: center right;*/
+    /*background-position: bottom right;*/
+    /*background-attachment: fixed;*/
+
+    background: darkcyan url("1logo.jpg") no-repeat;
+    background-size: 100% 100%;
+
+    font-size: 25px;
+    line-height: 20px;
+    /*overflow-y:auto;*/
+
+}
