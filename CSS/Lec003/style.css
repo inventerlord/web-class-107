@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+.img-box{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+
+    border:7px solid grey;
+    box-shadow: 0 0 14px black;
+    padding: 10px;
+   
+    
+}
+.wrapper{
+    width: 875px;
+    display:block;
+    /* margin: 0;  */
+    /* margin: 0 auto 0 auto;  */
+    margin: 100px auto 0; 
+    
+    
+    /* margin: 0 auto 0 auto;  */
+}
+.img-box img{
+    height: 100%;
+    width: 100%;
+}
+.mt-10{
+    margin-top: 10px !important;
+}
+.mr-10{
+    margin-right: 10px !important;
+}
