@@ -1,0 +1,43 @@
+.heading{
+    /* 
+    width
+        top-width
+        right-width
+        bottom-width
+        left-width
+    style
+        top-style
+        right-style
+        bottom-style
+        left-style
+    color
+        top-color
+        right-color
+        bottom-color
+        left-color
+    */
+    /* border-width: 3px;
+    border-style: solid;
+    border-color: brown;
+     */
+    border : 2px solid green;
+    border-width: 5px 1px 1px 1px;
+    /* border-bottom-width: 2px; */
+    border-color: brown red blue green;  
+    border-bottom-style: dashed;
+
+    border-radius: 3px 3px 3px 3px;
+    
+
+}
+
+.cbox{
+    height:200px;
+    width:200px;
+    background-color:brown;
+    border-radius: 50%;
+}
+
+.cbox:hover{
+    background-color: green;
+}
