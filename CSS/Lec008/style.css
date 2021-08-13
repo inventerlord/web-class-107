@@ -1,0 +1,21 @@
+#pa{
+ height: 500px;
+    border: 2px solid;
+}
+#ch{
+    height: 100%;
+}
+
+.ele{
+    width: 100px;
+    height: 50px;
+    border: 2px solid;
+}
+.flex{
+    display: flex;
+    column-gap: 3px;
+    row-gap: 3px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*height: 100%;*/
+}
