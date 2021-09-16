@@ -1,0 +1,13 @@
+.header {
+  color: #bf4080;
+  display: flex;
+  flex-direction: row;
+}
+.header > .logo {
+  height: 100px;
+}
+.header > .logo .menu {
+  height: 100px;
+}
+
+/*# sourceMappingURL=main.css.map */

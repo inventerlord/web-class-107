@@ -1,0 +1,66 @@
+HTML CSSResult Skip Results Iframe
+EDIT ON
+/* General styling of the page. */
+/* Sets a background color, font-size etc. */
+body {
+  background-color: #EDDDD4;
+}
+
+h1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+  font-size: 5em;
+  width: 5em;
+  line-height: 0.9em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5em;
+  margin-top: calc(50vh - 1em);
+}
+
+.list{
+ counter-reset: number;
+}
+.list p::before{
+    content: counter(number);  /*assing counter name*/
+    counter-increment: number;
+    background-color: #CA4246;
+    padding: 4px 8px;
+    border-radius: 50%;
+    margin-right: 8px;
+    color: white;
+}
+
+
+/* Style the rainbow text element. */
+.rainbow-text {
+  /* Create a conic gradient. */
+  /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
+  background: #CA4246;
+  background-color: #CA4246;
+  background: radial-gradient(
+    #CA4246 16.666%, 
+    #E16541 16.666%, 
+    #E16541 33.333%, 
+    #F18F43 33.333%, 
+    #F18F43 50%, 
+    #8B9862 50%, 
+    #8B9862 66.666%, 
+    #476098 66.666%, 
+    #476098 83.333%, 
+    #A7489B 83.333%);
+  border: 2px solid;
+ background-size: 57%;
+  background-repeat: repeat;
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+
+}
+
+/* Add animation on hover. */
+
+
+
+
+

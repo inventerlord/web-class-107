@@ -1,0 +1,16 @@
+$bg-main:#bf4080;
+
+.header{
+    color: $bg-main;
+    display: flex;
+    flex-direction: row;
+
+    & > .logo{
+       height: 100px; 
+
+       & .menu{
+        height: 100px; 
+     }
+    }
+    
+}
