@@ -77,7 +77,11 @@ $text-white:white;
                         left:100%;
                         top: 0;   
                     }
+                    & .submenu::after{
+                        content: '\f105';
+                    }
                 }
+                
                 & .sub-item:hover > .submenu{
                     display: block;
                 }
@@ -119,3 +123,21 @@ $text-white:white;
         }
     }
 }
+
+.hero{
+    width: 100%;
+    height: 300px;
+    & .imgcon{
+        width: 100%;
+        height: 100%;
+        & img{
+            height: 100%;
+            width: 100%;
+        }
+        // clip-path:  polygon(0 0, 100% 0%, 100% 70% ,87% 100%, 0% 100%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 78% 22%, 46% 100%, 23% 28%, 0% 75%);
+
+    }
+
+}
+// https://bennettfeely.com/clippy/
