@@ -1,0 +1,90 @@
+*{
+
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+    position: relative;
+    
+}
+.wrapper .img-box{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    color: white;
+    transition:all .7s;
+}
+.img-box img{
+    height: 100%;
+    width: 100%;
+    /* -webkit-box-reflect: right 10px; */
+    position: absolute;
+}
+.img-box .caption{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+}
+.caption h3{
+    padding: 10px;
+    background-color: tomato;
+}
+.r{
+    transform-origin: top right;
+}
+.r:hover{
+    transform: rotate(45deg);
+
+
+}
+.rx:hover{
+    transform: rotateX(90deg);
+}
+.ry:hover{
+    transform: rotateY(90deg);
+}
+
+.rxy:hover{
+    transform: rotateX(45deg) rotateY(180deg);
+}
+.t:hover{
+    transform: translate(100px);
+}
+.tx:hover{
+    transform: translateX(100px) ;
+}
+.ty:hover{
+    transform: translateY(100px) ;
+}
+
+.s:hover{
+    transform: scale(1.2);  
+    
+}
+.sx:hover{
+    transform: scaleX(2);
+}
+.sy{
+    transform-origin: top;
+}
+.sy:hover{
+    transform: scaleY(2);
+}
+
+.sk:hover{
+    transform: skew(20deg,30deg);
+}
+.skx:hover{
+    transform: skewX(20deg);
+}
+.sky:hover{
+    transform: skewY(20deg);
+}

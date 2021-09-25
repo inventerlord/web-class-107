@@ -1,0 +1,5 @@
+@font-face {
+    font-family: myicons;
+    src: url('fonticon/fonticon.eot');
+    src: url('fonticon/fonticon.eot?#iefix') format('embedded-opentype'), url('fonticon/fonticon.woff2') format('woff2'), url('fonticon/fonticon.woff') format('woff'), url('fonticon/fonticon.ttf') format('truetype')
+}
