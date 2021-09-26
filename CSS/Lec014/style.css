@@ -15,7 +15,7 @@
 }
 .ret{
     animation-name: rect;
-    animation-duration: 3s;
+    animation-duration: 7s;
     animation-iteration-count: infinite;
     /* animation-direction: alternate; */
 }
@@ -24,14 +24,20 @@
         transform: translateX(0) translateY(0);
 
     }
+    12.5%{
+        background-color: rgb(255, 38, 0);
+    }
     25%{
         transform: translateX(500px) translateY(0);
         background-color: blue;
     }
     50%{
         transform: translateX(500px) translateY(400px);
-        background-color: frgb(255, 8, 0);
+        background-color: rgb(255, 8, 0);
 
+    }
+    62.5%{
+        background-color: rgb(13, 185, 157);
     }
     75%{
         transform: translateX(0) translateY(400px);
