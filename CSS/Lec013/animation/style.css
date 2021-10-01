@@ -1,0 +1,62 @@
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+   
+
+}
+.trx{
+     /*  */
+    animation-name: lr;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+}
+.ret{
+    animation-name: rect;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* animation-direction: alternate; */
+}
+@keyframes rect {
+    0%{
+        transform: translateX(0) translateY(0);
+
+    }
+    12.5%{
+        background-color: rgb(0, 26, 255);
+    }
+    25%{
+        transform: translateX(500px) translateY(0);
+        background-color: rgb(43, 255, 0);
+    }
+    50%{
+        transform: translateX(500px) translateY(400px);
+        background-color: rgb(255, 8, 0);
+
+    }
+    62.5%{
+        background-color: rgb(13, 185, 157);
+    }
+    75%{
+        transform: translateX(0) translateY(400px);
+        background-color: rgb(145, 255, 0);
+        }
+    100%{
+        transform: translateX(0) translateY(0);
+        background-color: rgb(255, 0, 0);
+    }
+
+}
+@keyframes lr {
+    form{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(500px);
+    }
+    
+}
