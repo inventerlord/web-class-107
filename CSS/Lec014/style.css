@@ -1,60 +1,30 @@
-.box{
-    height: 100px;
-    width: 100px;
-    background-color: brown;
-   
-
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
-.trx{
-     /*  */
-    animation-name: lr;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-delay: 3s;
+.grid > div{
+    height: 20px;
 }
-.ret{
-    animation-name: rect;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    /* animation-direction: alternate; */
+.gi-1{
+    background-color: blueviolet;
 }
-@keyframes rect {
-    0%{
-        transform: translateX(0) translateY(0);
-
-    }
-    12.5%{
-        background-color: rgb(255, 38, 0);
-    }
-    25%{
-        transform: translateX(500px) translateY(0);
-        background-color: blue;
-    }
-    50%{
-        transform: translateX(500px) translateY(400px);
-        background-color: rgb(255, 8, 0);
-
-    }
-    62.5%{
-        background-color: rgb(13, 185, 157);
-    }
-    75%{
-        transform: translateX(0) translateY(400px);
-        background-color: rgb(145, 255, 0);
-        }
-    100%{
-        transform: translateX(0) translateY(0);
-        background-color: rgb(255, 0, 0);
-    }
-
+.gi-2{
+    background-color: rgb(101, 226, 43);
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
-@keyframes lr {
-    form{
-        transform: translateX(0);
-    }
-    to{
-        transform: translateX(500px);
-    }
-    
+.gi-3{
+    background-color: rgb(226, 147, 43);
+}
+.gi-4{
+    background-color: rgb(226, 43, 43);
+}
+.gi-5{
+    background-color: rgb(43, 226, 226);
+}
+.gi-6{
+    background-color: rgb(226, 43, 89);
+}
+.gi-7{
+    background-color: rgb(186, 226, 43);
 }
