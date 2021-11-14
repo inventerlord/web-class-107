@@ -1,11 +1,14 @@
 // alert("My site says hello word")
+// console.log()
+// prompt()
 console.log("i am Programmer")
-
+// let ageuser = prompt("Enter Your age");
+alert("Error 404");
 // var
 // let
 // const
 // const inp = document.getElementById('d');
-// console.log(inp.value);
+// console.log(inp.id);
 
 // Data types
 
@@ -24,9 +27,6 @@ let person = {
     firstname:"Faroogh",
     secondName:"Ahsna",
     age:54,
-    greet: function(str = "hello"){
-        console.log(str);
-    }
 }
 console.log(person.firstname);
 console.log(person.greet("Salmaan"));
