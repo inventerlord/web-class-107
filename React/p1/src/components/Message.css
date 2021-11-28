@@ -1,0 +1,12 @@
+.msg-container{
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 0 0 20px black;
+}
+.msg-container h2{
+    color: green;
+}
+.msg-container p{
+    color: red;
+    font-size: 30px;
+}
