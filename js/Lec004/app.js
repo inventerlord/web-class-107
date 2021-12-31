@@ -36,7 +36,6 @@ function searchUser(name) {
     if (status == 0){
         console.log("User Does not Exist");
     }
-
 }
 
 searchUser("ALI");
