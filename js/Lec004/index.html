@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0;padding: 0;box-sizing: border-box;}
+        html,body{
+            height: 100%;
+        }
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            gap: 10px;
+        }
+        .wrapper .calculator{
+            width: 340px;
+            box-shadow: 0 0 4px #555;
+            height: 400px;
+            background:#31b5c291
+        }
+        .calculator textarea{
+            resize: none;
+            width: 100%;
+            height: 40px;
+            background: transparent;
+        }
+        .calculator-btns{
+            display:flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            height:calc(100% - 40px);
+            
+        }
+        .calculator-btns span{
+            width: calc(100%/4);
+            height: calc(100%/4);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            cursor: pointer;
+            user-select: none;
+            
+        }
+        #clearbtn{
+            width: 340px;
+            text-align: center;
+            padding: 10px;
+            background: #31b5c291;
+            box-shadow: 0 0 4px #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="calculator">
+            <textarea id="calcscreen"  rows="4"></textarea>
+            <div class="calculator-btns">
+                <span onclick="document.getElementById('calcscreen').textContent += `9`">9</span>
+                <span onclick="document.getElementById('calcscreen').textContent += `8`">8</span>
+                <span onclick="document.getElementById('calcscreen').textContent += `7`">7</span>
+                <span onclick="document.getElementById('calcscreen').textContent += `+`">+</span>
+                <span onclick="document.getElementById('calcscreen').textContent += `6`">6</span>
+                <span onclick="document.getElementById('calcscreen').textContent += `5`">5</span>
+                <span onclick="document.getElementById('calcscreen').textContent += `4`">4</span>
+                <span onclick="document.getElementById('calcscreen').textContent += `-`">-</span>
+                <span onclick="document.getElementById('calcscreen').textContent += `3`">3</span>
+                <span onclick="document.getElementById('calcscreen').textContent += `2`">2</span>
+                <span onclick="document.getElementById('calcscreen').textContent += `1`">1</span>
+                <span onclick="document.getElementById('calcscreen').textContent += `*`">x</span>
+                <span onclick="document.getElementById('calcscreen').textContent += `.`">.</span>
+                <span onclick="document.getElementById('calcscreen').textContent += `0`">0</span>
+                <span onclick="document.getElementById('calcscreen').textContent = eval(document.getElementById('calcscreen').value)">=</span>
+                <span onclick="document.getElementById('calcscreen').textContent += `/`">/</span>
+            </div>
+        </div>
+        <div id="clearbtn">
+            <h3 onclick="document.getElementById('calcscreen').textContent = ''">Clear</h3>
+        </div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt/dist/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".wrapper"), {
+            max: 25,
+            speed: 400
+        });
+    </script>
+</body>
+</html>
