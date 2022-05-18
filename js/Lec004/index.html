@@ -58,7 +58,8 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="calculator">
+        <div id="tilt">
+            <div class="calculator">
             <textarea id="calcscreen"  rows="4"></textarea>
             <div class="calculator-btns">
                 <span onclick="document.getElementById('calcscreen').textContent += `9`">9</span>
@@ -78,14 +79,17 @@
                 <span onclick="document.getElementById('calcscreen').textContent = eval(document.getElementById('calcscreen').value)">=</span>
                 <span onclick="document.getElementById('calcscreen').textContent += `/`">/</span>
             </div>
+            <div id="clearbtn">
+                <h3 onclick="document.getElementById('calcscreen').textContent = ''">Clear</h3>
+            </div>
         </div>
-        <div id="clearbtn">
-            <h3 onclick="document.getElementById('calcscreen').textContent = ''">Clear</h3>
-        </div>
+        
     </div>
+    </div>
+    
     <script type="text/javascript" src="vanilla-tilt/dist/vanilla-tilt.min.js"></script>
     <script type="text/javascript">
-        VanillaTilt.init(document.querySelector(".wrapper"), {
+        VanillaTilt.init(document.querySelector("#tilt"), {
             max: 25,
             speed: 400
         });
