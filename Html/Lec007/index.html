@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lec007</title>
+  </head>
+  <body>
+    <ul>
+      <li id="h" data-my-name="https://www.google.com">hamza</li>
+      <li id="s" data-name="salmaan">salmaan</li>
+      <li id="f" data-name="faiz">faiz</li>
+      <li id="j" data-name="john">john</li>
+    </ul>
+    <label id="murga" data-my-fav-food="murga"></label>
+    <script> 
+      const nameh = document.getElementById("murga");
+      console.log(nameh.dataset.myFavFood);
+    </script>
+  </body>
+</html>
